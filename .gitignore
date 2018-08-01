@@ -1,2 +1,12 @@
+# VSCODE #
 .vscode
+
+# Gradle #
+.gradle
+
+# Java files #
+*.class
+
+# Build #
 build/
+bin/
