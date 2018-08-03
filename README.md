@@ -4,8 +4,7 @@ Enter an even number of names and run to see the results of this year's Secret S
 
 ### **Steps to Run**
 
-- Run program:  `./gradlew run -P args="[space-separated list of names]"`
-
+- Run program:  `./gradlew run -Pnames="[seperated list of even number of names]"  -Pyears="[number of times you would like to run]"`
 
 ### **Steps to Test**
 

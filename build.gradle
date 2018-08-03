@@ -20,6 +20,7 @@ mainClassName = 'App'
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:23.0'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
@@ -33,7 +34,5 @@ repositories {
 }
 
 run {
-    if(project.hasProperty('args')) {
-        args findProperty('args').split(' ')
-    }
+    args findProperty('names') + '/' + findProperty('years')
 }
